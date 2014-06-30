@@ -16,7 +16,7 @@
         "php": ">=5.3.0",
         "oyejorge/less.php": "~1.5"
     },
-    "autload": {
+    "autoload": {
         "psr-0": { "ILP\\BootstrapThemeBundle": "" }
     },
     "target-dir": "ILP/BootstrapThemeBundle"
