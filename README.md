@@ -17,7 +17,7 @@ To get started using BootstrapThemeBundle, add the project and its dependencies 
 ```json
 {
     "require": {
-        "ilikeprograms/BootstrapThemeBundle": "~0.0.1",
+        "ilp/bootstrap-theme-bundle": "~0.0.2"
         "oyejorge/less.php": "~1.5"
     }
 }
