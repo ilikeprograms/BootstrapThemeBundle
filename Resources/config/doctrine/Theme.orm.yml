@@ -1,0 +1,19 @@
+ILP\BootstrapThemeBundle\Entity\Theme:
+  type: entity
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    template_choice:
+      type: string
+      nullable: false
+      options:
+        default: 'Bootstrap'
+    theme_choice:
+      type: string
+      nullable: false
+      options:
+        default: 'Bootstrap'

@@ -1,0 +1,29 @@
+{
+  "name": "BootstrapThemeBundle",
+  "version": "0.0.1",
+  "authors": [
+    "Thomas Coleman <tom@ilikeprograms.com>"
+  ],
+  "description": "Symfony2 Boostrap Theme/Template management bundle, with theme live editing",
+  "keywords": [
+    "symfony2",
+    "bootstrap",
+    "less",
+    "live-edit",
+    "service"
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/ilikeprograms/BootstrapThemeBundle",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Resources/public/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "BootstrapThemeEditor": "~0.1.2"
+  },
+  "private": true
+}

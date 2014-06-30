@@ -1,0 +1,4 @@
+ilp_bootstrap_theme_EditorSaveModifications:
+    pattern:  /theme-editor/save
+    methods: [POST]
+    defaults: { _controller: ILPBootstrapThemeBundle:Editor:saveModifications }

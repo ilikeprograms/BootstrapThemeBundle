@@ -1,0 +1,16 @@
+parameters:
+    ilp_bootstrap_theme.theme_manager.class: ILP\BootstrapThemeBundle\Services\ThemeManager
+    ilp_bootstrap_theme.templating_type.class: ILP\BootstrapThemeBundle\Form\Type\TemplatingType
+
+services:
+    ilp_bootstrap_theme.theme_manager:
+        class: "%ilp_bootstrap_theme.theme_manager.class%"
+        arguments: ["@=parameter('ilp_bootstrap_theme.theme_base')","@=parameter('ilp_bootstrap_theme.template_base')"]
+        calls:
+            - [setKernel, ["@kernel"]]
+            - [setEntityManager, ['@doctrine']]
+    ilp_bootstrap_theme.form.type.templating:
+        class: "%ilp_bootstrap_theme.templating_type.class%"
+        arguments: ["@=service('ilp_bootstrap_theme.theme_manager')"]
+        tags:
+            - { name: form.type, alias: templating }
