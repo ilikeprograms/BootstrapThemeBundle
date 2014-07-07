@@ -17,7 +17,7 @@ class EditorController extends Controller
     public function saveModificationsAction(Request $request)
     {
         $themeManager = $this->get('ilp_bootstrap_theme.theme_manager');
-        $themeManager->saveTheme($request->get('modifications'));
+        $themeManager->saveTheme($request->getContent());
         
         return new Response();
     }
