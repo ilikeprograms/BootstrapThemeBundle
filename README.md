@@ -73,7 +73,6 @@ Finally you need to include the theme-editor js and initialise an instance, this
         },
         save: {
             url: 'theme-editor/save',
-            type: 'POST'
         }
     });
 </script>
