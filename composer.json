@@ -1,6 +1,6 @@
 {
     "name": "ilp/bootstrap-theme-bundle",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "description": "Symfony2 Boostrap Theme/Template management bundle, with theme live editing",
     "license": "GPL-3.0+",
     "homepage": "https://github.com/ilikeprograms/BootstrapThemeBundle",
