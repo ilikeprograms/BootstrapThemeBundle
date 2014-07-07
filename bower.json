@@ -23,7 +23,7 @@
     "tests"
   ],
   "devDependencies": {
-    "BootstrapThemeEditor": "~0.1.2"
+    "BootstrapThemeEditor": "~0.2.0"
   },
   "private": true
 }

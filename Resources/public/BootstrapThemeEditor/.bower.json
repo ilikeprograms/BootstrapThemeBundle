@@ -1,6 +1,6 @@
 {
   "name": "BootstrapThemeEditor",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "authors": [
     "Thomas Coleman <tom@ilikeprograms.com>"
   ],
@@ -11,7 +11,7 @@
     "less",
     "live-editing"
   ],
-  "license": "GPL v3",
+  "license": "GPL-3.0+",
   "homepage": "https://github.com/ilikeprograms/BootstrapThemeEditor",
   "ignore": [
     "**/.*",
@@ -30,13 +30,13 @@
     "bootstrap": "~3.1.1",
     "less.js": "~1.7.0"
   },
-  "_release": "0.1.2",
+  "_release": "0.2.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.1.2",
-    "commit": "e0f4b30c4f67279f8bbe281b8a59d6d476f8d581"
+    "tag": "v0.2.0",
+    "commit": "4544b56018a8290b2b8a188e9d659ed87ac4ff50"
   },
   "_source": "git://github.com/ilikeprograms/BootstrapThemeEditor.git",
-  "_target": "~0.1.2",
+  "_target": "~0.2.0",
   "_originalSource": "BootstrapThemeEditor"
 }
