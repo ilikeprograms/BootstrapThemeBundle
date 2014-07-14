@@ -1,6 +1,6 @@
 {
   "name": "BootstrapThemeEditor",
-  "version": "0.2.0",
+  "version": "0.3.4",
   "authors": [
     "Thomas Coleman <tom@ilikeprograms.com>"
   ],
@@ -17,11 +17,14 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "docs",
     "example-src",
     "src",
     "Gruntfile.js",
+    "_config.yml",
     "README.md",
     "package.json",
+    "CHANGELOG.md",
     "test",
     "tests"
   ],
@@ -30,13 +33,13 @@
     "bootstrap": "~3.1.1",
     "less.js": "~1.7.0"
   },
-  "_release": "0.2.0",
+  "_release": "0.3.4",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.0",
-    "commit": "4544b56018a8290b2b8a188e9d659ed87ac4ff50"
+    "tag": "0.3.4",
+    "commit": "ef6b2f7677b129d2ec769ab19432e698a2543ee6"
   },
   "_source": "git://github.com/ilikeprograms/BootstrapThemeEditor.git",
-  "_target": "~0.2.0",
+  "_target": "~0.3.3",
   "_originalSource": "BootstrapThemeEditor"
 }
