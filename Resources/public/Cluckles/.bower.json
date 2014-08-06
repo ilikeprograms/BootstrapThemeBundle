@@ -1,10 +1,10 @@
 {
-  "name": "BootstrapThemeEditor",
-  "version": "0.3.4",
+  "name": "Cluckles",
+  "version": "0.4.0",
   "authors": [
     "Thomas Coleman <tom@ilikeprograms.com>"
   ],
-  "description": "Bootstrap Theme editing API, which allows less files to be parsed and updated live",
+  "description": "Cluckles Live Theme Editor for CSS Framework based on Less such as Twitter Bootstrap",
   "keywords": [
     "bootstrap",
     "js",
@@ -12,7 +12,7 @@
     "live-editing"
   ],
   "license": "GPL-3.0+",
-  "homepage": "https://github.com/ilikeprograms/BootstrapThemeEditor",
+  "homepage": "https://github.com/ilikeprograms/Cluckles",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -33,13 +33,13 @@
     "bootstrap": "~3.1.1",
     "less.js": "~1.7.0"
   },
-  "_release": "0.3.4",
+  "_release": "0.4.0",
   "_resolution": {
     "type": "version",
-    "tag": "0.3.4",
-    "commit": "ef6b2f7677b129d2ec769ab19432e698a2543ee6"
+    "tag": "v0.4.0",
+    "commit": "1d7acb986fa8f494736c5083bc0ff5710fa167e9"
   },
-  "_source": "git://github.com/ilikeprograms/BootstrapThemeEditor.git",
-  "_target": "~0.3.3",
-  "_originalSource": "BootstrapThemeEditor"
+  "_source": "git://github.com/ilikeprograms/Cluckles.git",
+  "_target": "~0.4.0",
+  "_originalSource": "Cluckles"
 }

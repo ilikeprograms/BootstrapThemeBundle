@@ -23,7 +23,7 @@
     "tests"
   ],
   "devDependencies": {
-    "BootstrapThemeEditor": "~0.3.4"
+    "Cluckles": "~0.4.0"
   },
   "private": true
 }
