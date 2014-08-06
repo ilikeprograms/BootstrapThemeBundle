@@ -1,3 +1,9 @@
+parameters:
+    ilp_theme_editor.lib_path: "bundles/ilpbootstraptheme/Cluckles/build"
+
 twig:
     globals:
         theme_manager: "@ilp_bootstrap_theme.theme_manager"
+        theme_editor:
+          lib_path: "%ilp_theme_editor.lib_path%"
+          bootstrap_path: "%ilp_theme_editor.lib_path%/less/bootstrap.less"
