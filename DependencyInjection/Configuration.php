@@ -24,6 +24,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('theme_base')->end()
                 ->scalarNode('template_base')->end()
+                ->scalarNode('bundle')->end()
             ->end();
 
         // Here you should define the parameters that are allowed to

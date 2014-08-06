@@ -27,6 +27,7 @@ class ILPBootstrapThemeExtension extends Extension
 
         $themeBase = null;
         $templateBase = null;
+        $bundle = null;
         foreach ($configs as $config) {
             if (isset($config['theme_base'])) {
                 $themeBase = $config['theme_base'];
@@ -35,10 +36,15 @@ class ILPBootstrapThemeExtension extends Extension
             if (isset($config['template_base'])) {
                 $templateBase = $config['template_base'];
             }
+            
+            if (isset($config['bundle'])) {
+                $bundle = $config['bundle'];
+            }
         }
 
         if (!$themeBase) { throw new \InvalidArgumentException('The "theme_base" option must be provided, this is so we know where to find theme files'); }
         if (!$templateBase) { throw new \InvalidArgumentException('The "template_base" option must be provided, this is so we know where to find template files'); }
+        if (!$bundle) { throw new \InvalidArgumentException('The "bundle" option must be provided, this is so we know where the Bundle resources are stored'); }
 
         $container->setParameter(
             'ilp_bootstrap_theme.theme_base',
@@ -47,6 +53,10 @@ class ILPBootstrapThemeExtension extends Extension
         
         $container->setParameter(
             'ilp_bootstrap_theme.template_base', $templateBase
+        );
+
+        $container->setParameter(
+            'ilp_bootstrap_theme.bundle', $bundle
         );
     }
 }
