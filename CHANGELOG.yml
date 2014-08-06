@@ -1,0 +1,17 @@
+CHANGELOG
+=========
+
+[**0.1.0**]
+
+- [Readme] Updated to reflect new API
+- [Readme] Changed references to Cluckles
+- [Service] Now saving Css and installing theme in saveTheme method of ThemeManager
+- [Service] Updated bootstrap.less path in generateTheme method of ThemeManager
+- [Service] Added getCurrentThemeJsonPath to ThemeManager
+- [View] Using `theme_editor.lib_path` in editor-js
+- [Service] Passing `bundle` option to ThemeManager service
+- [Dependency] Added a `bundle` BundleConfig option
+- [Config] Added theme_editor.* twig globals
+- [Views] Using Cluckles templates in themeEditor.html.twig
+- [Views] Using Components and Editor from Cluckles
+- [Bower] Replace BootstrapThemeEditor with Cluckles
