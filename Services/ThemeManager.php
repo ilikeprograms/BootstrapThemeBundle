@@ -28,6 +28,7 @@ class ThemeManager
 {
     protected $themeBase;
     protected $templateBase;
+    protected $bundle;
     protected $kernel;
     protected $em;
     protected $themeEntity = null;
@@ -37,11 +38,13 @@ class ThemeManager
      * 
      * @param string $themeBase The base folder where the Themes are stored.
      * @param string $templateBase The base folder where the Templates are stored.
+     * @param string $bundle The bundle where the Resources are stored.
      */
-    public function __construct($themeBase, $templateBase)
+    public function __construct($themeBase, $templateBase, $bundle)
     {
-        $this->themeBase = $themeBase;
+        $this->themeBase    = $themeBase;
         $this->templateBase = $templateBase;
+        $this->bundle       = $bundle;
     }
     
     /**

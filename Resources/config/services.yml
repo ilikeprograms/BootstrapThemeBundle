@@ -5,7 +5,7 @@ parameters:
 services:
     ilp_bootstrap_theme.theme_manager:
         class: "%ilp_bootstrap_theme.theme_manager.class%"
-        arguments: ["@=parameter('ilp_bootstrap_theme.theme_base')","@=parameter('ilp_bootstrap_theme.template_base')"]
+        arguments: ["@=parameter('ilp_bootstrap_theme.theme_base')", "@=parameter('ilp_bootstrap_theme.template_base')", "@=parameter('ilp_bootstrap_theme.bundle')"]
         calls:
             - [setKernel, ["@kernel"]]
             - [setEntityManager, ['@doctrine']]
