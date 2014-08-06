@@ -130,6 +130,28 @@ class ThemeManager
     {
         return $this->getTemplateBase() . '/' . $this->getTemplateChoice();
     }
+    
+    /**
+     * Gets the Configured Bundle web path.
+     * 
+     * @return string
+     */
+    public function getConfiguredBundlePath()
+    {
+        $bundleLower = strtolower($this->bundle);
+
+        return 'bundles/'. $bundleLower;
+    }
+    
+    /**
+     * Gets the Current Theme's theme.json file path.
+     * 
+     * @return string
+     */
+    public function getCurrentThemeJsonPath()
+    {
+        return $this->getConfiguredBundlePath() . '/css/' . $this->getThemeChoice() . '/theme.json';
+    }
 
     /**
      * Saves the Theme modifications into a theme.json file in the current theme folder.
