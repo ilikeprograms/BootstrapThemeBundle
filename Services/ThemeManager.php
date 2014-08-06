@@ -194,7 +194,7 @@ class ThemeManager
 
         // Try to parse the source files and modify the variables if theme.json exists
         try {
-            $lessParser->parseFile($this->getKernelRootDir() . '/../vendor/ilp/bootstrap-theme-bundle/ILP/BootstrapThemeBundle/Resources/public/BootstrapThemeEditor/build/less/bootstrap.less');
+            $lessParser->parseFile($this->getKernelRootDir() . '/../vendor/ilp/bootstrap-theme-bundle/ILP/BootstrapThemeBundle/Resources/public/Cluckles/build/less/bootstrap.less');
             
             if (isset($themeOptions)) {
                 $lessParser->ModifyVars($themeOptions);
