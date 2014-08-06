@@ -8,7 +8,7 @@ There is also a service which allows you to compile the changes to the theme and
 
 For example usage see (Corvus)[https://github.com/ilikeprograms/corvus]
 
-This project makes use of (BootstrapThemeEditor)[https://github.com/ilikeprograms/BootstrapThemeEditor] for the Live editing features.
+This project makes use of (Cluckles)[https://github.com/ilikeprograms/Cluckles] for the Live editing features.
 
 ## Getting Started
 
