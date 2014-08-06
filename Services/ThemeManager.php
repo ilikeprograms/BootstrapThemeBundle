@@ -156,7 +156,14 @@ class ThemeManager
     /**
      * Saves the Theme modifications into a theme.json file in the current theme folder.
      * 
-     * @param string $themeData Json stringified variable keys and values, can be used with Less_Parser->modifyVars().
+     * $themeData should contain json key and optionally css keys. When the css key is provided, the css is saved and the theme is installed.
+     * This expects the the css would have been compiled if the css export option was chosen when instantiation a Cluckles (The theme editor JS) instance.
+     * When this is the case we can avoid server side compilation of the Css by parsing the JSON modifications with $lessParser->ModifyVars() in generateTheme,
+     * which tends to take a long time and timeout on shared hosts.
+     * 
+     * If you do have problems with saving themes timing out, then enable the css export option in Cluckles (See https://github.com/ilikeprograms/Cluckles) for that.
+     * 
+     * @param string $themeData Json stringified theme modification data, will either have json key or json and css key.
      * 
      * @return int
      */
@@ -165,9 +172,23 @@ class ThemeManager
         // Get the current theme folder
         $themePath = $this->getThemePath();
         
-        // Save the theme.json file in the current theme folder
-        file_put_contents($themePath . '/theme.json', $themeData);
+        // Decode the JSON into an array
+        $themeData = json_decode($themeData, true);
         
+        // Save the theme.json file in the current theme folder
+        file_put_contents($themePath . '/theme.json', json_encode($themeData['json']));
+
+        // If the CSS has been provided, it would have already been compiled Client Side
+        if (array_key_exists('css', $themeData)) {
+            // So Save the Compiled CSS
+            file_put_contents($themePath . '/theme.css', $themeData['css']);
+            
+            // Now install the Theme and Skip generating the Css server side
+            // This avoids problems with the generating failing on shared hosting
+            // where the PHP will timeout
+            return $this->installTheme();
+        }
+
         // Now generate the theme using bootstrap.less + theme.json
         return $this->generateTheme();
     }
