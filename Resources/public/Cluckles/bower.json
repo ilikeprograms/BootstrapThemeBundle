@@ -1,6 +1,6 @@
 {
   "name": "Cluckles",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "authors": [
     "Thomas Coleman <tom@ilikeprograms.com>"
   ],
@@ -11,7 +11,7 @@
     "less",
     "live-editing"
   ],
-  "license": "GPL-3.0+",
+  "license": "MIT",
   "homepage": "https://github.com/ilikeprograms/Cluckles",
   "ignore": [
     "**/.*",
