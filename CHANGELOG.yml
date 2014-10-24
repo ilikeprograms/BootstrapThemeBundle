@@ -1,6 +1,18 @@
 CHANGELOG
 =========
 
+[**0.2.0**]
+
+- [Package] Bumped Minor version. Changed to MIT Licence.
+- [Editor] Bumped cluckles V. Added component-example-fix.js from Cluckles.
+- [Editor] Optimised Less globals for Production
+- [Views] Updated components/editor templates
+- [Grunt] Added Gruntfile to copy components/editor from Cluckles to views/Default folder
+- [Package] Added package.json to add grunt in dev
+- [Deps] Updated Cluckles Dep to 0.6.2
+- [Deps] Updated Cluckles Dep to 0.6.1
+- [Deps] Updated Cluckles Dep to 0.6.0
+
 [**0.1.0**]
 
 - [Readme] Updated to reflect new API

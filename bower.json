@@ -1,6 +1,6 @@
 {
   "name": "BootstrapThemeBundle",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "authors": [
     "Thomas Coleman <tom@ilikeprograms.com>"
   ],
@@ -12,7 +12,7 @@
     "live-edit",
     "service"
   ],
-  "license": "GPL-3.0+",
+  "license": "MIT",
   "homepage": "https://github.com/ilikeprograms/BootstrapThemeBundle",
   "ignore": [
     "**/.*",
