@@ -23,7 +23,7 @@
     "tests"
   ],
   "devDependencies": {
-    "Cluckles": "~0.6.0"
+    "Cluckles": "~0.6.1"
   },
   "private": true
 }

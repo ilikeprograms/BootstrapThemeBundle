@@ -1,6 +1,6 @@
 {
   "name": "Cluckles",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "authors": [
     "Thomas Coleman <tom@ilikeprograms.com>"
   ],
@@ -33,13 +33,13 @@
     "bootstrap": "~3.1.1",
     "less.js": "~1.7.0"
   },
-  "_release": "0.6.0",
+  "_release": "0.6.1",
   "_resolution": {
     "type": "version",
-    "tag": "v0.6.0",
-    "commit": "71baf4f48a3610080c323303b8b07b0f1304d315"
+    "tag": "v0.6.1",
+    "commit": "ba19e4b82b4e3e803d5ca93fc05a53a8061141fe"
   },
   "_source": "git://github.com/ilikeprograms/Cluckles.git",
-  "_target": "~0.6.0",
+  "_target": "~0.6.1",
   "_originalSource": "Cluckles"
 }
